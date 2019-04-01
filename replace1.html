@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		//1  var str="hello 123";
+		//2 var str="hello 1 3";
+		//3 var str="batch";
+		//4var str="abatchq12";
+		var str="batchqwerds";
+		//var str="welcome to batch6";
+		function a()
+		{
+			//1 vtn=str.replace(/\d\ d\d/gi,"$$$$$");// (\s we use for spaceing to chang replace) ( \t for 8 space )(\d mean decimal to find digite of number)(\w find word charecter)
+			
+           //2 vtn=str.replace(/\d\s\d/g,"$$$")
+          
+          //3 vtn=str.replace(/batch[0-9]?/gi,"$"); //( ?:make the previuos chareter optional)
+           
+
+          //4  vtn=str.replace(/.batch./gi,"$");//(... mean to alert all string in str one . one aksor)
+
+
+          //5  vtn=str.replace(/.+/gi,"$");//(.+ print only $)
+
+          // vtn=str.replace(/.*/gi,"$");//(.* print $ 2time)
+
+
+           //vtn=str.replace(/ba[a-z]/gi,"$");//(it mean to chang that aksor)
+
+           vtn=str.replace(/[a-z]{2} $/gi,"*****");
+			  
+
+			  alert(vtn);
+		}
+	</script>
+</head>
+<body>
+	<button onclick="a()"> click </button>
+
+</body>
+</html>
